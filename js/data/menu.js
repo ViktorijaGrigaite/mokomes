@@ -1,0 +1,42 @@
+// The games on the home screen and the sections they are grouped into.
+
+const GAMES = [
+  {id:'match', grp:'w', lt:'Rask paveikslėlį', en:'Find the picture', sub:'Learn words & find the picture', ico:'🔍', c:'var(--green)'},
+  {id:'memory', grp:'w', lt:'Atmintis', en:'Memory', sub:'Memory cards', ico:'🃏', c:'var(--red)'},
+  {id:'balloons', grp:'w', lt:'Balionai', en:'Balloons', sub:'Pop the right balloon', ico:'🎈', c:'var(--blue)'},
+  {id:'feed', grp:'w', lt:'Maitink gyvūną', en:'Feed the animal', sub:'Give the right food', ico:'🥕', c:'var(--yellow-dark)'},
+  {id:'hide', grp:'w', lt:'Kas pasislėpė?', en:'Who is hiding?', sub:'Guess the hidden animal', ico:'🌳', c:'var(--green)'},
+  {id:'paint', grp:'w', lt:'Spalvink', en:'Colour it in', sub:'Colours and painting', ico:'🎨', c:'var(--purple)'},
+  {id:'body', grp:'w', lt:'Kūno dalys', en:'Body parts', sub:'Nose, eyes, ears…', ico:'👃', c:'var(--coral)'},
+  {id:'dress', grp:'w', lt:'Aprenk meškiuką', en:'Dress the bear', sub:'Clothes and weather', ico:'🧥', c:'var(--blue)'},
+  {id:'live', grp:'w', lt:'Kur gyvena?', en:'Where does it live?', sub:'Farm, forest or sea', ico:'🏡', c:'var(--green)'},
+  {id:'places', grp:'w', lt:'Kur katė?', en:'Where is the cat?', sub:'On, in or next to', ico:'📦', c:'var(--coral)'},
+  {id:'transport', grp:'w', lt:'Transportas', en:'Transport', sub:'Sky, road or water', ico:'✈️', c:'var(--blue)'},
+  {id:'shop', grp:'w', lt:'Parduotuvė', en:'The shop', sub:'Pay with euro coins', ico:'🛒', c:'var(--yellow-dark)'},
+  {id:'sounds', grp:'k', lt:'Kaip sako gyvūnai?', en:'What do animals say?', sub:'Au au, miau, mū!', ico:'🐓', c:'var(--coral)'},
+  {id:'call', grp:'k', lt:'Paskambink močiutei', en:'Call grandma', sub:'A pretend phone call', ico:'📞', c:'var(--green)'},
+  {id:'polite', grp:'k', lt:'Mandagūs žodžiai', en:'Polite words', sub:'Ačiū, prašau, atsiprašau', ico:'🤝', c:'var(--blue)'},
+  {id:'feel', grp:'k', lt:'Jausmai', en:'Feelings', sub:'Happy, sad, angry…', ico:'😀', c:'var(--purple)'},
+  {id:'mix', grp:'t', lt:'Spalvų maišymas', en:'Mixing colours', sub:'Yellow + blue = ?', ico:'🎨', c:'var(--yellow-dark)'},
+  {id:'odd', grp:'t', lt:'Kas nesiderina?', en:'Odd one out', sub:'Find the one that doesn’t belong', ico:'🤔', c:'var(--coral)'},
+  {id:'opp', grp:'t', lt:'Priešingybės', en:'Opposites', sub:'Big and small, hot and cold', ico:'⚖️', c:'var(--blue)'},
+  {id:'plural', grp:'t', lt:'Vienas ar daug?', en:'One or many?', sub:'katė or katės?', ico:'🐥', c:'var(--green)'},
+  {id:'routine', grp:'t', lt:'Mano diena', en:'My day', sub:'Put the day in order', ico:'⏰', c:'var(--purple)'},
+  {id:'abc', grp:'l', lt:'Abėcėlė', en:'Alphabet', sub:'Alphabet', ico:'🔤', c:'var(--yellow-dark)'},
+  {id:'letters', grp:'l', lt:'Raidžių medžioklė', en:'Letter hunt', sub:'Find the letter', ico:'🔎', c:'var(--blue)'},
+  {id:'build', grp:'l', lt:'Sudėk žodį', en:'Build the word', sub:'Put the letters in order', ico:'🧩', c:'var(--red)'},
+  {id:'count', grp:'l', lt:'Skaičiuok!', en:'Count!', sub:'Counting 1–10', ico:'🔢', c:'var(--green)'},
+  {id:'first', grp:'l', lt:'Pirmas garsas', en:'First sound', sub:'What starts with Š?', ico:'🗣️', c:'var(--coral)'},
+  {id:'rhyme', grp:'l', lt:'Rimai', en:'Rhymes', sub:'pelė – gėlė', ico:'🎵', c:'var(--blue)'},
+  {id:'read', grp:'l', lt:'Perskaityk ir parodyk', en:'Read and point', sub:'Your first reading', ico:'📖', c:'var(--green)'},
+  {id:'syl', grp:'l', lt:'Skiemenys', en:'Syllables', sub:'Clap the syllables', ico:'🥁', c:'var(--purple)'},
+  {id:'move', grp:'m', lt:'Judėk!', en:'Move!', sub:'Move like me', ico:'🤸', c:'var(--purple)'},
+  {id:'hunt', grp:'m', lt:'Lobių paieška', en:'Treasure hunt', sub:'Find things at home', ico:'🗺️', c:'var(--yellow-dark)'},
+  {id:'daily', grp:'m', lt:'Dienos žodis', en:'Word of the day', sub:'A new word every day', ico:'📅', c:'var(--blue)'},
+  {id:'egg', grp:'c', lt:'Margink margutį', en:'Decorate an Easter egg', sub:'Lithuanian patterns', ico:'🥚', c:'var(--coral)'},
+  {id:'symbols', grp:'c', lt:'Lietuvos simboliai', en:'Symbols of Lithuania', sub:'Stork, oak, amber…', ico:'🏰', c:'var(--green)'},
+  {id:'seasons', grp:'c', lt:'Metų laikai', en:'Seasons and holidays', sub:'Kalėdos, Velykos, Užgavėnės', ico:'🍁', c:'var(--yellow-dark)'},
+  {id:'story', grp:'s', lt:'Pasakėlės', en:'Stories', sub:'Short picture stories', ico:'📚', c:'var(--coral)'}
+];
+
+const GROUPS = [['w','Žodžiai','Words'],['k','Kalbėk','Talk'],['t','Mąstyk','Think'],['l','Raidės ir skaičiai','Letters & numbers'],['c','Lietuva','Lithuania'],['m','Judėk ir ieškok','Move & find'],['s','Pasakų laikas','Story time']];

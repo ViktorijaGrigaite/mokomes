@@ -1,0 +1,7 @@
+/* Sizing for the 3D illustrations that replace emoji on screen. */
+.e3d{display:inline-block;width:1.15em;height:1.15em;vertical-align:-0.2em;object-fit:contain;-webkit-user-drag:none;user-select:none;pointer-events:none}
+.bin .e3d,.opt .e3d,.food .e3d{width:1.25em;height:1.25em}
+.peek{line-height:0;bottom:56%;transform:translate(-50%,62%) rotate(var(--r,0deg))}
+.peek.out{transform:translate(-50%,0) rotate(0deg)}
+.peek .e3d{display:block;width:1em;height:1em}
+.objs .e3d{width:1.3em;height:1.3em}

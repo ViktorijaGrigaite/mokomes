@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>Mokausi lietuviškai</title>
+  <meta name="description" content="Lithuanian learning games for young children.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Nunito:wght@500;700;800&display=swap">
+  <link rel="stylesheet" href="css/01-base.css">
+  <link rel="stylesheet" href="css/02-games.css">
+  <link rel="stylesheet" href="css/03-theme.css">
+  <link rel="stylesheet" href="css/04-games-more.css">
+  <link rel="stylesheet" href="css/05-illustrations.css">
+</head>
+<body>
+<div class="clouds" aria-hidden="true"><span>☁️</span><span>☁️</span><span>☁️</span></div>
+<div class="wrap">
+  <header>
+    <button class="brand" id="homeBtn" aria-label="Pradžia (home)" data-say="Mokausi lietuviškai|I'm learning Lithuanian">
+      <span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>
+      <h1>Mokausi lietuviškai</h1>
+    </button>
+    <div class="hdr-right">
+      <button class="who" id="who" hidden aria-label="Pakeisti žaidėją (switch player)" data-say="Kas žaidžia?|Who's playing?"><span class="emo" id="whoAv"></span><span id="whoName"></span></button>
+      <div class="stars" id="stars" aria-label="Žvaigždutės (stars)" data-say="Žvaigždutės|Stars"><span class="emo">⭐</span><span id="starN">0</span></div>
+    </div>
+  </header>
+  <div class="note" id="voiceNote" hidden>
+    <p><b>The sounds didn’t load.</b> Check your internet connection and reload the page.</p>
+    <button id="closeNote" aria-label="Close">×</button>
+  </div>
+  <main id="screen" class="wrap" style="padding:0;gap:18px"></main>
+</div>
+
+<!-- Scripts share one global scope and load in this order: data, then core helpers, then screens and games, then app.js starts everything. -->
+<script src="js/data/vocabulary.js"></script>
+<script src="js/data/ui-text.js"></script>
+<script src="js/data/menu.js"></script>
+<script src="js/data/activities.js"></script>
+<script src="js/data/stories.js"></script>
+<script src="js/core/helpers.js"></script>
+<script src="js/core/profiles.js"></script>
+<script src="js/core/stars.js"></script>
+<script src="js/core/audio.js"></script>
+<script src="js/core/illustrations.js"></script>
+<script src="js/core/screens.js"></script>
+<script src="js/core/game-kit.js"></script>
+<script src="js/screens/players.js"></script>
+<script src="js/screens/topic-picker.js"></script>
+<script src="js/games/find-the-picture.js"></script>
+<script src="js/games/memory.js"></script>
+<script src="js/games/alphabet.js"></script>
+<script src="js/games/counting.js"></script>
+<script src="js/games/move-like-me.js"></script>
+<script src="js/games/balloons.js"></script>
+<script src="js/games/feed-the-animal.js"></script>
+<script src="js/games/whos-hiding.js"></script>
+<script src="js/games/colour-it-in.js"></script>
+<script src="js/games/letter-hunt.js"></script>
+<script src="js/games/build-the-word.js"></script>
+<script src="js/games/treasure-hunt.js"></script>
+<script src="js/games/word-of-the-day.js"></script>
+<script src="js/screens/sticker-book.js"></script>
+<script src="js/games/dress-the-bear.js"></script>
+<script src="js/games/where-does-it-live.js"></script>
+<script src="js/games/shop.js"></script>
+<script src="js/games/odd-one-out.js"></script>
+<script src="js/games/opposites.js"></script>
+<script src="js/games/one-or-many.js"></script>
+<script src="js/games/my-day.js"></script>
+<script src="js/games/first-sound.js"></script>
+<script src="js/games/syllables.js"></script>
+<script src="js/games/stories.js"></script>
+<script src="js/games/animal-sounds.js"></script>
+<script src="js/games/call-grandma.js"></script>
+<script src="js/games/polite-words.js"></script>
+<script src="js/games/feelings.js"></script>
+<script src="js/games/symbols-of-lithuania.js"></script>
+<script src="js/games/seasons-and-transport.js"></script>
+<script src="js/games/easter-egg.js"></script>
+<script src="js/games/where-is-the-cat.js"></script>
+<script src="js/games/rhymes.js"></script>
+<script src="js/games/read-and-point.js"></script>
+<script src="js/games/mixing-colours.js"></script>
+<script src="js/screens/parents.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
